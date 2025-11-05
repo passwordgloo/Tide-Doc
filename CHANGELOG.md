@@ -2,6 +2,19 @@
 
 项目站点 [听潮公考](https://tide.iglooblog.top)，喜欢的朋友给仓库点赞收藏👍
 
+### [0.0.3](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.2...v0.0.3) (2025-11-05)
+
+
+### ✨ Features | 功能
+
+* 将文档内容本地化为中文并添加公考相关内容 ([61274ed](https://github.com/passwordgloo/Tide-Doc/commit/61274ed10c08af710518ca94f0ceda1ad1905ea2))
+
+
+### 📚 Documentation | 文档
+
+* **zhhistory:** 添加中国近代史相关文档内容 ([53da0b9](https://github.com/passwordgloo/Tide-Doc/commit/53da0b9d3c7eef11113005fb35d93c7415be0859))
+* 删除过时的API和Markdown示例文档 ([5428d50](https://github.com/passwordgloo/Tide-Doc/commit/5428d50ebc3afd981de9baaa17d2e0a875d523d5))
+
 ## [0.0.2](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.1...v0.0.2) (2025-11-05)
 
 
