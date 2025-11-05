@@ -1,0 +1,21 @@
+{
+  "name": "tide-doc",
+  "version": "0.0.0",
+  "description": "980 course",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "foresee",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "vitepress": "2.0.0-alpha.12"
+  },
+  "dependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
