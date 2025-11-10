@@ -115,7 +115,7 @@ export default defineConfig({
         text: '行测',
         items: [
           { text: '判断推理', link: '/preface/' },
-          { text: '言语理解', link: '/language-understanding/' },
+          { text: '言语理解', link: '/language-understanding/1' },
           { text: '数量分析', link: '/number-analysis/' }
         ]
       },
@@ -142,6 +142,19 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/language-understanding/': [
+        {
+          text: '言语理解',
+          items: [
+            { text: '中心理解题', link: '/language-understanding/1' },
+            { text: '细节判断题', link: '/language-understanding/2' },
+            { text: '语句排序题', link: '/language-understanding/3' },
+            { text: '语句填空题', link: '/language-understanding/4' },
+            { text: '接语选择题', link: '/language-understanding/5' },
+            { text: '逻辑填空', link: '/language-understanding/6' },
+          ]
+        }
+      ],
       '/max/': [
         {
           text: '马克思主义基本原理',
