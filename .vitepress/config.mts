@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+import fs from 'node:fs'
+import path from 'node:path'
+import type { Dirent } from 'node:fs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -141,116 +144,100 @@ export default defineConfig({
       },
     ],
 
-    sidebar: {
-      '/language-understanding/': [
-        {
-          text: '言语理解',
-          items: [
-            { text: '中心理解题', link: '/language-understanding/1' },
-            { text: '细节判断题', link: '/language-understanding/2' },
-            { text: '语句排序题', link: '/language-understanding/3' },
-            { text: '语句填空题', link: '/language-understanding/4' },
-            { text: '接语选择题', link: '/language-understanding/5' },
-            { text: '逻辑填空', link: '/language-understanding/6' },
-          ]
+    // 自动生成侧边栏配置
+    sidebar: (() => {
+      // 解析Markdown文件的标题
+      const getMarkdownTitle = (filePath: string): string => {
+        try {
+          const content = fs.readFileSync(filePath, 'utf-8');
+          
+          // 先尝试从frontmatter中获取title
+          const frontmatterMatch = content.match(/^---\s*([\s\S]*?)\s*---/);
+          if (frontmatterMatch) {
+            const frontmatter = frontmatterMatch[1];
+            const titleMatch = frontmatter.match(/title:\s*(['"]?)(.*?)\1\s*$/m);
+            if (titleMatch) {
+              return titleMatch[2];
+            }
+          }
+          
+          // 如果没有frontmatter，尝试获取第一个H1标题
+          const h1Match = content.match(/^#\s+(.*)$/m);
+          if (h1Match) {
+            return h1Match[1];
+          }
+          
+          // 如果都没有，返回文件名（去掉扩展名）
+          return path.basename(filePath, '.md');
+        } catch (error) {
+          console.error(`Error reading file ${filePath}:`, error);
+          return path.basename(filePath, '.md');
         }
-      ],
-      '/max/': [
-        {
-          text: '马克思主义基本原理',
-          items: [
-            { text: '马克思主义原理导论', link: '/max/' },
-            { text: '物质观与意识观', link: '/max/1' },
-            { text: '辩证法', link: '/max/2' },
-            { text: '认识论', link: '/max/3' },
-            { text: '唯物史观', link: '/max/4' },
-            { text: '资本主义的本质与规律', link: '/max/5' },
-            { text: '剩余价值的生产与积累', link: '/max/6' },
-            { text: '剩余价值的流转与分配', link: '/max/7' },
-            { text: '垄断资本主义的发展', link: '/max/8' },
-            { text: '科学社会主义', link: '/max/9' },
-          ]
+      };
+      
+      // 根据目录结构生成侧边栏配置
+      const generateSidebar = (dir: string): Record<string, any[]> => {
+        const sidebar: Record<string, any[]> = {};
+        // 使用__dirname代替process.cwd()
+        const basePath = path.join(__dirname, '..', dir);
+        
+        try {
+          const dirs = fs.readdirSync(basePath, { withFileTypes: true })
+            .filter((dirent: Dirent) => dirent.isDirectory())
+            .map((dirent: Dirent) => dirent.name);
+          
+          dirs.forEach((dirName: string) => {
+            const fullPath = path.join(basePath, dirName);
+            const files = fs.readdirSync(fullPath)
+              .filter((file: string) => file.endsWith('.md'))
+              .sort();
+            
+            if (files.length > 0) {
+              const items: any[] = [];
+              
+              // 检查是否有index.md文件
+              const indexFile = files.find((file: string) => file === 'index.md');
+              
+              // 处理其他md文件（不包括index.md）
+              files.forEach((file: string) => {
+                if (file !== 'index.md') {
+                  const fileName = path.basename(file, '.md');
+                  items.push({
+                    text: getMarkdownTitle(path.join(fullPath, file)),
+                    link: `/${dirName}/${fileName}`
+                  });
+                }
+              });
+              
+              // 使用目录对应的index.md的标题作为分组标题
+              const groupTitle = indexFile 
+                ? getMarkdownTitle(path.join(fullPath, indexFile))
+                : dirName;
+              
+              // 只有当有其他文件或者没有index.md时才添加侧边栏配置
+              if (items.length > 0 || !indexFile) {
+                sidebar[`/${dirName}/`] = [{
+                  text: groupTitle,
+                  items
+                }];
+              }
+            }
+          });
+        } catch (error) {
+          console.error('Error generating sidebar:', error);
         }
-      ],
-      '/maxpe/': [
-        {
-          text: '马克思主义政治经济学',
-          items: [
-            { text: '商品的由来', link: '/maxpe/1' },
-            { text: '微观经济学', link: '/maxpe/2' },
-            { text: '宏观经济学', link: '/maxpe/3' },
-            { text: '社会主义市场经济', link: '/maxpe/4' },
-          ]
-        }
-      ],
-      '/zhhistory/': [
-        {
-          text: '中国近代史纲要',
-          items: [
-            { text: '反抗外国侵略的斗争', link: '/zhhistory/1' },
-            { text: '对国家出路的早期探索', link: '/zhhistory/2' },
-            { text: '辛亥革命与君主专制制度的终结', link: '/zhhistory/3' },
-            { text: '开天辟地的大事件', link: '/zhhistory/4' },
-            { text: '中国革命的新道路', link: '/zhhistory/5' },
-            { text: '中华民族的抗日战争', link: '/zhhistory/6' },
-            { text: '为新中国而奋斗', link: '/zhhistory/7' },
-            { text: '社会主义基本制度在中国的确立', link: '/zhhistory/8' },
-            { text: '社会主义建设在探索中曲折发展', link: '/zhhistory/9' },
-            { text: '中国特色社会主义的开创与接续发展', link: '/zhhistory/10' },
-          ]
-        },
-        {
-          text: '中共党史',
-          items: [
-            { text: '中国共产党成立的条件', link: '/zhhistory/a' },
-            { text: '党的成立到大革命失败', link: '/zhhistory/b' },
-            { text: '土地革命', link: '/zhhistory/c' },
-            { text: '全面抗战', link: '/zhhistory/d' },
-            { text: '社会主义制度的确立', link: '/zhhistory/e' },
-            { text: '改革开放', link: '/zhhistory/f' },
-          ]
-        }
-      ],
-      '/mzt/': [
-        {
-          text: '毛泽东思想与中特理论',
-          items: [
-            { text: '马克思主义中国化的三次飞跃', link: '/mzt/' },
-            { text: '毛泽东思想及其历史地位', link: '/mzt/1' },
-            { text: '新民主主义革命理论', link: '/mzt/2' },
-            { text: '社会主义改造理论', link: '/mzt/3' },
-            { text: '社会主义建设道路初步抿索的理论成果', link: '/mzt/4' },
-            { text: '邓小平理论', link: '/mzt/5' },
-            { text: '“三个代表”重要思想', link: '/mzt/6' },
-            { text: '科学发展观', link: '/mzt/7' },
-            { text: '习近平新时代中国特色社会主次思想及其历史地位', link: '/mzt/8' },
-            { text: '坚持和发展中国特色社会主义的总任务', link: '/mzt/9' },
-            { text: '“五位一体”总体布局(经济)', link: '/mzt/10' },
-            { text: '“五位一体”总体布局(政治)', link: '/mzt/11' },
-            { text: '“五位一体”总体布局(文化)', link: '/mzt/12' },
-            { text: '“五位一体”总体布局(社会)', link: '/mzt/13' },
-            { text: '“五位一体”总体布局(生态)', link: '/mzt/14' },
-            { text: '“四个全面”战略布局', link: '/mzt/15' },
-            { text: '实现中华民族伟大复兴的重要保障', link: '/mzt/16' },
-            { text: '中国特色大国外交', link: '/mzt/17' },
-            { text: '坚持和加强党的领导', link: '/mzt/18' },
-          ]
-        }
-      ],
-      '/ideology/': [
-        {
-          text: '马克思主义政治经济学',
-          items: [
-            { text: '人生的青春之问', link: '/ideology/1' },
-            { text: '人生理想', link: '/ideology/2' },
-            { text: '中国精神', link: '/ideology/3' },
-            { text: '明大德守公德严私德', link: '/ideology/4' },
-            { text: '社会主义核心价值观', link: '/ideology/5' },
-            { text: '法治道路与思维', link: '/ideology/6' },
-          ]
-        }
-      ],
-    },
+        
+        return sidebar;
+      };
+      
+      // 生成侧边栏配置
+      const sidebarConfig = generateSidebar('.');
+      
+      // 可以在这里添加自定义配置覆盖自动生成的配置
+      // 例如：sidebarConfig['/custom/'] = [{ text: 'Custom', items: [...] }];
+      
+      return sidebarConfig;
+    })(),
 
 
     socialLinks: [
