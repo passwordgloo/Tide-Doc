@@ -1,6 +1,6 @@
 {
   "name": "tide-doc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "980 course",
   "main": "index.js",
   "scripts": {
