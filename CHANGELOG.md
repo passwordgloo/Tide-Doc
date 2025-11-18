@@ -2,6 +2,14 @@
 
 项目站点 [听潮公考](https://tide.iglooblog.top)，喜欢的朋友给仓库点赞收藏👍
 
+### [0.0.5](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.4...v0.0.5) (2025-11-18)
+
+
+### 📚 Documentation | 文档
+
+* 更新文档样式和依赖版本 ([5231b8f](https://github.com/passwordgloo/Tide-Doc/commit/5231b8ff86e3e17077aad983b026b0aa24a44a1a))
+* 添加和更新多个课程的文档结构 ([30457c3](https://github.com/passwordgloo/Tide-Doc/commit/30457c38f735aca8be5ad59b92a504ac11b87a76))
+
 ### 0.0.4 (2025-11-16)
 
 
