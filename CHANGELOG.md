@@ -2,16 +2,14 @@
 
 项目站点 [听潮公考](https://tide.iglooblog.top)，喜欢的朋友给仓库点赞收藏👍
 
-### [0.0.5](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.4...v0.0.5) (2025-11-18)
-
+## [0.0.5](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.4...v0.0.5) (2025-11-18)
 
 ### 📚 Documentation | 文档
 
 * 更新文档样式和依赖版本 ([5231b8f](https://github.com/passwordgloo/Tide-Doc/commit/5231b8ff86e3e17077aad983b026b0aa24a44a1a))
 * 添加和更新多个课程的文档结构 ([30457c3](https://github.com/passwordgloo/Tide-Doc/commit/30457c38f735aca8be5ad59b92a504ac11b87a76))
 
-### 0.0.4 (2025-11-16)
-
+## 0.0.4 (2025-11-16)
 
 ### 📚 Documentation | 文档
 
@@ -38,8 +36,7 @@
 * **release:** 0.0.3 ([fedc5fe](https://github.com/passwordgloo/Tide-Doc/commit/fedc5fea156ab3645d5b45fd48bec7916b6baed1))
 * 在.gitignore中添加dist目录 ([ffeff38](https://github.com/passwordgloo/Tide-Doc/commit/ffeff38283452bc5706b3afe38f25bf080caaeba))
 
-### [0.0.3](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.2...v0.0.3) (2025-11-05)
-
+## [0.0.3](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.2...v0.0.3) (2025-11-05)
 
 ### ✨ Features | 功能
 
@@ -53,19 +50,16 @@
 
 ## [0.0.2](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.1...v0.0.2) (2025-11-05)
 
-
 ### 📚 Documentation | 文档
 
 * 更新CHANGELOG格式并添加.versionrc配置文件 ([50a0d83](https://github.com/passwordgloo/Tide-Doc/commit/50a0d83f5e42ad2ce092390fad1379cd77c62dc0))
 * 更新许可证为CC-BY-SA-4.0并添加许可证文件 ([5cc387e](https://github.com/passwordgloo/Tide-Doc/commit/5cc387e478f24ca48740fda40419c4d30e080066))
-
 
 ### ✨ Features | 功能
 
 * 添加多个学科笔记文件及图片资源 ([c6eedcc](https://github.com/passwordgloo/Tide-Doc/commit/c6eedccbfb9def17685179243b8b95f83b629676))
 
 ## 0.0.1 (2025-11-05)
-
 
 ### Features
 
