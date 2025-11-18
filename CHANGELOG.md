@@ -2,6 +2,18 @@
 
 项目站点 [听潮公考](https://tide.iglooblog.top)，喜欢的朋友给仓库点赞收藏👍
 
+### [0.0.6](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.5...v0.0.6) (2025-11-18)
+
+
+### 📚 Documentation | 文档
+
+* **zhhistory:** 为历史事件添加Badge标记并删除无用文件 ([ffbca5a](https://github.com/passwordgloo/Tide-Doc/commit/ffbca5a4eddc5a5e8b30d9660a95029703f8f949))
+
+
+### 🔨 Code Refactoring | 代码重构
+
+* **docs:** 重构判断推理文档结构并更新导航配置 ([9ec913f](https://github.com/passwordgloo/Tide-Doc/commit/9ec913ffba17550a6311f9782ebb834f5fda8b5f))
+
 ## [0.0.5](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.4...v0.0.5) (2025-11-18)
 
 ### 📚 Documentation | 文档
