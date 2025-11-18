@@ -115,7 +115,7 @@ export default defineConfig({
       {
         text: '行测',
         items: [
-          { text: '判断推理', link: '/preface/' },
+          { text: '判断推理', link: '/reason/1' },
           { text: '言语理解', link: '/language-understanding/1' },
           { text: '数量分析', link: '/number-analysis/' }
         ]
@@ -143,6 +143,19 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/ideology/': [
+        {
+          text: '马克思主义政治经济学',
+          items: [
+            { text: '人生的青春之问', link: '/ideology/1' },
+            { text: '人生理想', link: '/ideology/2' },
+            { text: '中国精神', link: '/ideology/3' },
+            { text: '明大德守公德严私德', link: '/ideology/4' },
+            { text: '社会主义核心价值观', link: '/ideology/5' },
+            { text: '法治道路与思维', link: '/ideology/6' },
+          ]
+        }
+      ],
       '/language-understanding/': [
         {
           text: '言语理解',
@@ -184,34 +197,6 @@ export default defineConfig({
           ]
         }
       ],
-      '/zhhistory/': [
-        {
-          text: '中国近代史纲要',
-          items: [
-            { text: '反抗外国侵略的斗争', link: '/zhhistory/1' },
-            { text: '对国家出路的早期探索', link: '/zhhistory/2' },
-            { text: '辛亥革命与君主专制制度的终结', link: '/zhhistory/3' },
-            { text: '开天辟地的大事件', link: '/zhhistory/4' },
-            { text: '中国革命的新道路', link: '/zhhistory/5' },
-            { text: '中华民族的抗日战争', link: '/zhhistory/6' },
-            { text: '为新中国而奋斗', link: '/zhhistory/7' },
-            { text: '社会主义基本制度在中国的确立', link: '/zhhistory/8' },
-            { text: '社会主义建设在探索中曲折发展', link: '/zhhistory/9' },
-            { text: '中国特色社会主义的开创与接续发展', link: '/zhhistory/10' },
-          ]
-        },
-        {
-          text: '中共党史',
-          items: [
-            { text: '中国共产党成立的条件', link: '/zhhistory/a' },
-            { text: '党的成立到大革命失败', link: '/zhhistory/b' },
-            { text: '土地革命', link: '/zhhistory/c' },
-            { text: '全面抗战', link: '/zhhistory/d' },
-            { text: '社会主义制度的确立', link: '/zhhistory/e' },
-            { text: '改革开放', link: '/zhhistory/f' },
-          ]
-        }
-      ],
       '/mzt/': [
         {
           text: '毛泽东思想与中特理论',
@@ -238,16 +223,42 @@ export default defineConfig({
           ]
         }
       ],
-      '/ideology/': [
+      'reason':[
         {
-          text: '马克思主义政治经济学',
+          text: '判断推理',
           items: [
-            { text: '人生的青春之问', link: '/ideology/1' },
-            { text: '人生理想', link: '/ideology/2' },
-            { text: '中国精神', link: '/ideology/3' },
-            { text: '明大德守公德严私德', link: '/ideology/4' },
-            { text: '社会主义核心价值观', link: '/ideology/5' },
-            { text: '法治道路与思维', link: '/ideology/6' },
+            { text: '图形推理', link: '/reason/1' },
+            { text: '类比推理', link: '/reason/2' },
+            { text: '定义判断', link: '/reason/3' },
+            { text: '逻辑判断', link: '/reason/4' },
+          ]
+        }
+      ],
+      '/zhhistory/': [
+        {
+          text: '中国近代史纲要',
+          items: [
+            { text: '反抗外国侵略的斗争', link: '/zhhistory/1' },
+            { text: '对国家出路的早期探索', link: '/zhhistory/2' },
+            { text: '辛亥革命与君主专制制度的终结', link: '/zhhistory/3' },
+            { text: '开天辟地的大事件', link: '/zhhistory/4' },
+            { text: '中国革命的新道路', link: '/zhhistory/5' },
+            { text: '中华民族的抗日战争', link: '/zhhistory/6' },
+            { text: '为新中国而奋斗', link: '/zhhistory/7' },
+            { text: '社会主义基本制度在中国的确立', link: '/zhhistory/8' },
+            { text: '社会主义建设在探索中曲折发展', link: '/zhhistory/9' },
+            { text: '中国特色社会主义的开创与接续发展', link: '/zhhistory/10' },
+          ]
+        },
+        {
+          text: '中共党史',
+          items: [
+            { text: '中国共产党成立的条件', link: '/zhhistory/a' },
+            { text: '党的成立到大革命失败', link: '/zhhistory/b' },
+            { text: '土地革命', link: '/zhhistory/c' },
+            { text: '全面抗战', link: '/zhhistory/d' },
+            { text: '社会主义制度的确立', link: '/zhhistory/e' },
+            { text: '改革开放', link: '/zhhistory/f' },
           ]
         }
       ],
