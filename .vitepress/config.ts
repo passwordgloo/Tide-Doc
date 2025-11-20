@@ -4,8 +4,10 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'zh-CN',
   title: "听潮公考",
-  description: "听潮公考是一个专注于公考备考的平台，提供公基、法律、科技等方向的备考资料。",
+  description: "听潮公考是一个专注于公务员考试备考的平台，提供公基、法律、科技等科目的资料。",
+  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   markdown: {
+    toc: { level: [1, 2, 3] },
     container: {
       noteLabel: '注意',
       tipLabel: '提示',
@@ -20,8 +22,18 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     logoLink: 'https://tide.iglooblog.top',
-    lastUpdatedText: '上次相遇于',
+    lastUpdated: {
+      text: '上次相逢于',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    },
     outlineTitle: '目录',
+    docFooter: {
+      prev: '灯下旧文',
+      next: '晨光新章'
+    },
     footer: {
       message: 'Released under the CCBY 4.0 License.',
       copyright: 'Copyright © 2025-present Tide'
@@ -126,7 +138,8 @@ export default defineConfig({
         items: [
           { text: '判断推理', link: '/reason/1' },
           { text: '言语理解', link: '/language-understanding/1' },
-          { text: '数量分析', link: '/quantity/1' }
+          { text: '数量分析', link: '/quantity/1' },
+          { text: '资料分析', link: '/data/1' },
         ]
       },
       {
