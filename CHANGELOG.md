@@ -2,7 +2,19 @@
 
 项目站点 [听潮公考](https://tide.iglooblog.top)，喜欢的朋友给仓库点赞收藏👍
 
-### [0.0.6](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.5...v0.0.6) (2025-11-18)
+## [0.0.7](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.6...v0.0.7) (2025-11-19)
+
+
+### 📚 Documentation | 文档
+
+* 添加数量模块和分析推理文档并更新导航配置 ([1bdfa6b](https://github.com/passwordgloo/Tide-Doc/commit/1bdfa6b6e73f18063f5bb16229085506a4ce0f01))
+
+
+### ✨ Features | 功能
+
+* 添加markdown数学公式支持并初始化vitepress配置 ([9a7908d](https://github.com/passwordgloo/Tide-Doc/commit/9a7908dde25c270db656e0cd252fa4e66ff4bd03))
+
+## [0.0.6](https://github.com/passwordgloo/Tide-Doc/compare/v0.0.5...v0.0.6) (2025-11-18)
 
 
 ### 📚 Documentation | 文档

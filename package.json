@@ -1,6 +1,6 @@
 {
   "name": "tide-doc",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "980 course",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "license": "CC-BY-SA-4.0",
   "packageManager": "pnpm@10.22.0",
   "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "2.0.0-alpha.13"
   },
   "dependencies": {

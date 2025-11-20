@@ -14,9 +14,18 @@ export default defineConfig({
       infoLabel: '信息',
       importantLabel:'重要',
       detailsLabel: '详细信息',
-    }
+    },
+    math: true
   },
   themeConfig: {
+    logo: '/logo.svg',
+    logoLink: 'https://tide.iglooblog.top',
+    lastUpdatedText: '上次相遇于',
+    outlineTitle: '目录',
+    footer: {
+      message: 'Released under the CCBY 4.0 License.',
+      copyright: 'Copyright © 2025-present Tide'
+    },
     // https://vitepress.dev/reference/default-theme-config
     search: {
       provider: 'algolia',
@@ -117,13 +126,12 @@ export default defineConfig({
         items: [
           { text: '判断推理', link: '/reason/1' },
           { text: '言语理解', link: '/language-understanding/1' },
-          { text: '数量分析', link: '/number-analysis/' }
+          { text: '数量分析', link: '/quantity/1' }
         ]
       },
       {
         text: '公基',
         items: [
-          { text: '科技史', link: '/technology-history/' },
           { text: '物理', link: '/physics/' },
           { text: '化学', link: '/chemistry/' },
           { text: '生物', link: '/biology/' },
@@ -143,6 +151,16 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/essay/': [
+        {
+          text: '申论',
+          items: [
+            { text: '阅读材料技巧', link: '/essay/1' },
+            { text: '论点论据大集合', link: '/essay/5' },
+            { text: '结尾六大技巧', link: '/essay/6' },
+          ]
+        }
+      ],
       '/ideology/': [
         {
           text: '马克思主义政治经济学',
@@ -223,6 +241,18 @@ export default defineConfig({
           ]
         }
       ],
+      'quantity':[
+        {
+          text: '数量关系',
+          items: [
+            { text: '数学思维', link: '/quantity/1' },
+            { text: '工程问题', link: '/quantity/2' },
+            { text: '费用问题', link: '/quantity/3' },
+            { text: '行程问题', link: '/quantity/4' },
+            { text: '几何问题', link: '/quantity/5' },
+          ]
+        }
+      ],
       'reason':[
         {
           text: '判断推理',
@@ -231,6 +261,7 @@ export default defineConfig({
             { text: '类比推理', link: '/reason/2' },
             { text: '定义判断', link: '/reason/3' },
             { text: '逻辑判断', link: '/reason/4' },
+            { text: '分析推理', link: '/reason/5' },
           ]
         }
       ],
@@ -263,7 +294,6 @@ export default defineConfig({
         }
       ],
     },
-
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
