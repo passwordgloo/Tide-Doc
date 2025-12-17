@@ -11,10 +11,10 @@
   "keywords": [],
   "author": "foresee",
   "license": "CC-BY-SA-4.0",
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.26.0",
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
-    "vitepress": "2.0.0-alpha.13"
+    "vitepress": "2.0.0-alpha.15"
   },
   "dependencies": {
     "standard-version": "^9.5.0"

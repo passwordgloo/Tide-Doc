@@ -164,6 +164,16 @@ export default defineConfig({
     ],
 
     sidebar: {
+      'data/': [
+        {
+          text: '资料分析',
+          items: [
+            { text: '修正思维', link: '/data/1' },
+            { text: '增长相关', link: '/data/2' },
+            { text: '比值相关', link: '/data/3' },
+          ]
+        }
+      ],
       '/essay/': [
         {
           text: '申论',
