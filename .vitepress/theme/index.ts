@@ -2,7 +2,9 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import './style.css'
+import confetti from "./components/confetti.vue"
+
+import './style/index.css'
 
 export default {
   extends: DefaultTheme,
@@ -11,7 +13,8 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp({ app, router, siteData }) {
-    // ...
+  enhanceApp({app}) { 
+    // 注册全局组件
+    app.component('confetti' , confetti)
   }
 } satisfies Theme

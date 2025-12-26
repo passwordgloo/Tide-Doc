@@ -1,7 +1,13 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
+head:
+  - - meta
+    - name: description
+      content: 听潮公考 - 专业公考学习平台，提供全面的公考学习资源和服务。
+  - - meta
+    - name: keywords
+      content: 听潮公考, 公考学习, 公考资源, 公考模拟, 公考备考, 公考考试, 公考备考指南, 公考备考资源, 公考备考模拟, 公考备考考试
 layout: home
-
 hero:
   name: "听潮公考"
   text: "题海不盲卷，破浪有章法"
@@ -18,14 +24,21 @@ hero:
       link: /about
 
 features:
-    - title:  全文搜索  🔍
-      details:  瞬间定位关键词，快速找到所需资料，提升学习效率。
+    - title:  常识
+      details:  诗词歌赋、戏曲、历史、地理等常识学习，帮助考生快速掌握基础知识。
+      link: /humanities/1
+      linkText:  查看常识学习
 
-    - title:  AI智能搜索  🤖
-      details:  引入先进AI搜索技术，智能分析需求，提供精准学习路径。
 
-    - title:  闪电启动  ⚡️
-      details:  使用Vite+Vue  3技术栈，站点启动迅速，减少等待时间，优化学习体验。
+    - title:  政治
+      details:  优先学习政治理论，结合时事热点，提高政治素养和答题技巧。
+      link: /max/
+      linkText:  开始政治学习
+
+    - title:  申论
+      details:  提供申论写作指导，教你如何构思、布局和提升文章质量。
+      link: /essay/
+      linkText:  开始申论学习
 
     - title:  方法讲解  📚
       details:  提供详尽的科目学习方法和技巧，助你掌握核心要点。
@@ -45,3 +58,6 @@ features:
     - title:  法律链接导航  🔗
       details:  法律部分提供精选站外链接，拓展学习资源，满足深度需求。
 ---
+
+
+<confetti />
