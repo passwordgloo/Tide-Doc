@@ -24,40 +24,61 @@ hero:
       link: /about
 
 features:
-    - title:  常识
+    - title:  常识  📚
       details:  诗词歌赋、戏曲、历史、地理等常识学习，帮助考生快速掌握基础知识。
       link: /humanities/1
       linkText:  查看常识学习
 
 
-    - title:  政治
+    - title:  政治  🏛️
       details:  优先学习政治理论，结合时事热点，提高政治素养和答题技巧。
       link: /max/
       linkText:  开始政治学习
 
-    - title:  申论
+    - title:  申论  ✍️
       details:  提供申论写作指导，教你如何构思、布局和提升文章质量。
       link: /essay/
       linkText:  开始申论学习
 
-    - title:  方法讲解  📚
-      details:  提供详尽的科目学习方法和技巧，助你掌握核心要点。
+    - title:  判断推理  🧩
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: /reason/1
+      linkText:  开始判断推理学习
 
-    - title:  行测专区  📊
-      details:  专注于行政职业能力测验，提供全面的学习资料和模拟试题。
+    - title:  言语理解  💬
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: /language-understanding/1
+      linkText:  开始言语理解学习
 
-    - title:  公基全覆盖  📚
-      details:  涵盖法律、政治、经济、文化等公基知识点，助你全面掌握考试内容。
+    - title:  数量分析  📊
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: /quantity/1
+      linkText:  开始数量分析学习
 
-    - title:  政治深度解析  🎯      
-      details:  深入解析政治理论，结合时事热点，提高政治素养和答题技巧。
+    - title:  资料分析  📈
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: /data/1
+      linkText:  开始资料分析学习
 
-    - title:  申论写作指导  🖋️
-      details:  提供申论写作指导，教你如何构思、布局和提升文章质量。
+    - title:  宪法  📜
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: https://law.iglooblog.top/constitution/1.html
+      linkText:  开始宪法学习
 
-    - title:  法律链接导航  🔗
-      details:  法律部分提供精选站外链接，拓展学习资源，满足深度需求。
+    - title:  民法典  📘
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: https://law.iglooblog.top/civillaw/
+      linkText:  开始民法典学习
+
+    - title:  刑法  ⚖️
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: https://law.iglooblog.top/criminal/1.html
+      linkText:  开始刑法学习
+
+    - title:  诉讼法  📋
+      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      link: https://law.iglooblog.top/proceeding/
+      linkText:  开始诉讼法学习
 ---
-
 
 <confetti />
