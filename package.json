@@ -1,13 +1,13 @@
 {
   "name": "tide-doc",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "980 course",
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "cz": "czg emoji"
+    "cz": "git add . && czg emoji && git push"
   },
   "keywords": [],
   "author": "foresee",
