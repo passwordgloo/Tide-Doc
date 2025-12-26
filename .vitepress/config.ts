@@ -176,6 +176,8 @@ export default defineConfig({
             { text: '修正思维', link: '/data/1' },
             { text: '增长相关', link: '/data/2' },
             { text: '比值相关', link: '/data/3' },
+            { text: '增长率相关', link:'/data/4'},
+            { text: '比较相关', link:'/data/5'}
           ]
         }
       ],
