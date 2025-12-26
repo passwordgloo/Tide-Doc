@@ -41,42 +41,42 @@ features:
       linkText:  开始申论学习
 
     - title:  判断推理  🧩
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供图形推理、类比推理、定义判断、逻辑判断等学习资源，帮助考生掌握推理技巧。
       link: /reason/1
       linkText:  开始判断推理学习
 
     - title:  言语理解  💬
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供中心理解、细节判断、语句排序等学习资料，提高考生的语言理解和表达能力。
       link: /language-understanding/1
       linkText:  开始言语理解学习
 
     - title:  数量分析  📊
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供数学思维、工程问题、行程问题等解题方法，提升考生的数量关系分析能力。
       link: /quantity/1
       linkText:  开始数量分析学习
 
     - title:  资料分析  📈
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供增长相关、比值相关、比较相关等数据分析技巧，帮助考生快速准确解答资料分析题。
       link: /data/1
       linkText:  开始资料分析学习
 
     - title:  宪法  📜
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供宪法基本理论、公民基本权利义务、国家机构等学习内容，帮助考生掌握宪法知识。
       link: https://law.iglooblog.top/constitution/1.html
       linkText:  开始宪法学习
 
     - title:  民法典  📘
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供物权、合同、人格权、婚姻家庭等民法知识，帮助考生理解和应用民法典。
       link: https://law.iglooblog.top/civillaw/
       linkText:  开始民法典学习
 
     - title:  刑法  ⚖️
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供犯罪构成、刑罚体系、常见罪名等学习资料，帮助考生掌握刑法基础知识。
       link: https://law.iglooblog.top/criminal/1.html
       linkText:  开始刑法学习
 
     - title:  诉讼法  📋
-      details:  提供精选站外链接，拓展学习资源，满足深度需求。
+      details:  提供民事诉讼、刑事诉讼、行政诉讼等程序法知识，帮助考生了解诉讼程序和规则。
       link: https://law.iglooblog.top/proceeding/
       linkText:  开始诉讼法学习
 ---
