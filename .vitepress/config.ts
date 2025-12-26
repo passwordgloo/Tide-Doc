@@ -8,6 +8,9 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   markdown: {
     toc: { level: [1, 2, 3] },
+    image: {
+      lazyLoading: true
+    },
     container: {
       noteLabel: '注意',
       tipLabel: '提示',
@@ -22,6 +25,8 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
     logoLink: 'https://tide.iglooblog.top',
+    sidebarMenuLabel:'目录', 
+    returnToTopLabel:'返回顶部',
     lastUpdated: {
       text: '上次相逢于',
       formatOptions: {
@@ -145,7 +150,7 @@ export default defineConfig({
       {
         text: '公基',
         items: [
-          { text: '物理', link: '/physics/' },
+          { text: '人文', link: '/humanities/1' },
           { text: '化学', link: '/chemistry/' },
           { text: '生物', link: '/biology/' },
           { text: '信息', link: '/information/' },
@@ -181,6 +186,16 @@ export default defineConfig({
             { text: '阅读材料技巧', link: '/essay/1' },
             { text: '论点论据大集合', link: '/essay/5' },
             { text: '结尾六大技巧', link: '/essay/6' },
+          ]
+        }
+      ],
+      '/humanities/': [
+        {
+          text: '人文',
+          items: [
+            { text: '诗词戏曲', link: '/humanities/1' },
+            { text: '中国社会', link: '/humanities/2' },
+            { text: '中国法律', link: '/humanities/3' },
           ]
         }
       ],
@@ -319,7 +334,8 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/passwordgloo' },
+      { icon: 'gitee', link: 'https://gitee.com/passwordgloo' }
     ]
   }
 })

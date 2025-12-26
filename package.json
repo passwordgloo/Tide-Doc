@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "foresee",
   "license": "CC-BY-SA-4.0",
-  "packageManager": "pnpm@10.26.0",
+  "packageManager": "pnpm@10.26.2",
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
     "vitepress": "2.0.0-alpha.15"
