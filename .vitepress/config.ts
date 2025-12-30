@@ -150,7 +150,7 @@ export default defineConfig({
       {
         text: '公基',
         items: [
-          { text: '人文', link: '/humanities/1' },
+          { text: '人文', link: '/humanities/1.1' },
           { text: '化学', link: '/chemistry/' },
           { text: '生物', link: '/biology/' },
           { text: '信息', link: '/information/' },
@@ -193,11 +193,18 @@ export default defineConfig({
       ],
       '/humanities/': [
         {
-          text: '人文',
+          text: '文学艺术',
           items: [
-            { text: '诗词戏曲', link: '/humanities/1' },
-            { text: '中国社会', link: '/humanities/2' },
-            { text: '中国法律', link: '/humanities/3' },
+            { text: '诗词戏曲', link: '/humanities/1.1' },
+            { text: '中国文学', link: '/humanities/1.2' },
+            { text: '中国社会', link: '/humanities/1.3' },
+            { text: '书法绘画', link: '/humanities/1.4' },
+          ]
+        },
+        {
+          text: '文学常识',
+          items: [
+            { text: '古代思想流派', link: '/humanities/2.1' },
           ]
         }
       ],

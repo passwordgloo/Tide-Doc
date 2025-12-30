@@ -7,7 +7,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "cz": "git add . && czg emoji && git push"
+    "czg": "git add . && czg break && git push"
   },
   "keywords": [],
   "author": "foresee",
@@ -20,6 +20,7 @@
     "vue": "^3.5.26"
   },
   "dependencies": {
+    "czg": "^1.12.0",
     "standard-version": "^9.5.0"
   }
 }
